@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.1)
 
-project(firstWork VERSION 0.0.2)
+project(firstWork VERSION 0.0.3)
 
 find_package(Threads REQUIRED)
 find_package(Boost COMPONENTS unit_test_framework REQUIRED)

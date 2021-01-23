@@ -15,4 +15,4 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-  - curl -f -T firstWork-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -u zagumennovav:$BINTRAY_API_KEY "https://api.bintray.com/content/zagumennovav/otus-cpp/homework/$TRAVIS_BUILD_NUMBER/firstWork-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=xenial;deb_component=main;deb_architecture=amd64;publish=1"
+  - curl -f -T firstWork-0.0.3-Linux.deb -u ZagumennovAV:$BINTRAY_API_KEY "https://api.bintray.com/content/ZagumennovAV/otus-cpp/homework/3/firstWork-0.0.3-Linux.deb;deb_distribution=xenial;deb_component=main;deb_architecture=amd64;publish=1"

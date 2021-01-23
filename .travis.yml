@@ -1,9 +1,10 @@
-dist: buster
+dist: debian
 language: cpp
 compiler: clang
 addons:
   apt:
     packages:
+    - clang
     - libboost-test-dev
     - libspdlog-dev
 script:

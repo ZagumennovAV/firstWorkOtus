@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.1)
 
-project(firstWork VERSION 0.0.1$ENV{TRAVIS_BUILD_NUMBER})
+project(firstWork VERSION 0.0.2)
 
 find_package(Threads REQUIRED)
 find_package(Boost COMPONENTS unit_test_framework REQUIRED)
@@ -33,8 +33,6 @@ target_link_libraries(test_version
     ${Boost_LIBRARIES}
     helloworld
 )
-
-install(TARGETS helloworld_cli RUNTIME DESTINATION bin)
 
 set(CPACK_GENERATOR DEB)
 

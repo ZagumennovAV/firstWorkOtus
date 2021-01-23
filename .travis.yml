@@ -1,10 +1,9 @@
-dist: debian
+dist: xenial
 language: cpp
 compiler: clang
 addons:
   apt:
     packages:
-    - clang
     - libboost-test-dev
     - libspdlog-dev
 script:
@@ -16,4 +15,4 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-  - curl -f -T firstWork-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -u zagumennovav:$BINTRAY_API_KEY "https://api.bintray.com/content/zagumennovav/otus-cpp/homework/$TRAVIS_BUILD_NUMBER/firstWork-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=buster;deb_component=main;deb_architecture=amd64;publish=1"
+  - curl -f -T firstWork-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -u zagumennovav:$BINTRAY_API_KEY "https://api.bintray.com/content/zagumennovav/otus-cpp/homework/$TRAVIS_BUILD_NUMBER/firstWork-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=xenial;deb_component=main;deb_architecture=amd64;publish=1"

@@ -8,6 +8,7 @@ int main()
   //  logger->info("version {} was started", version());
 
 	int a=0;
+	int b=0;
 
     return 0;
 }
